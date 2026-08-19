@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdul Muntakim | Accounting, Business Development & ACCA Aspirant</title>
+  <meta name="description" content="Official website of Abdul Muntakim, an Accounting Intern and Business Development professional at Emulous Accounting in London, working toward an ACCA-qualified career.">
+  <meta name="author" content="Abdul Muntakim">
+  <meta name="theme-color" content="#0b1320">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Abdul Muntakim | Accounting & Business Development">
+  <meta property="og:description" content="Accounting Intern at Emulous Accounting, business development professional and future ACCA-qualified accountant.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/318609741?v=4">
+  <meta property="og:url" content="https://abdul-muntakim.github.io/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdul Muntakim",
+    "url": "https://abdul-muntakim.github.io/",
+    "image": "https://avatars.githubusercontent.com/u/318609741?v=4",
+    "jobTitle": "Accounting Intern & Business Development",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Emulous Accounting"
+    },
+    "sameAs": ["https://github.com/Abdul-muntakim"],
+    "knowsAbout": [
+      "Accounting",
+      "Business Development",
+      "Finance",
+      "Tax",
+      "Entrepreneurship"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #08111f;
+      --bg-soft: #0d1a2b;
+      --card: rgba(255,255,255,.055);
+      --card-strong: #102237;
+      --text: #f7f9fc;
+      --muted: #a7b4c6;
+      --line: rgba(255,255,255,.10);
+      --accent: #3dd6a1;
+      --accent-2: #7fd6ff;
+      --shadow: 0 24px 70px rgba(0,0,0,.28);
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% 5%, rgba(61,214,161,.13), transparent 28rem),
+        radial-gradient(circle at 92% 8%, rgba(127,214,255,.10), transparent 26rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(8,17,31,.78);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+
+    .brand-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 24px rgba(61,214,161,.75);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    .hero {
+      min-height: 82vh;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 56px;
+      padding: 92px 0 78px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid rgba(61,214,161,.28);
+      background: rgba(61,214,161,.08);
+      color: #bcffe7;
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: .9rem;
+      margin-bottom: 22px;
+    }
+
+    .tag::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3.4rem, 8vw, 7rem);
+      line-height: .92;
+      letter-spacing: -.062em;
+      max-width: 760px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, var(--text), #c9f5e7 48%, #bfeaff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--muted);
+      margin: 28px 0 0;
+    }
+
+    .hero-copy strong { color: var(--text); }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      font-weight: 750;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--accent); color: #052017; border-color: transparent; }
+    .btn-secondary { background: rgba(255,255,255,.045); }
+    .btn-secondary:hover { border-color: rgba(127,214,255,.42); }
+
+    .profile-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-card {
+      width: min(390px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.025));
+      box-shadow: var(--shadow);
+      transform: rotate(1.2deg);
+    }
+
+    .avatar-shell {
+      aspect-ratio: 1 / 1;
+      border-radius: 23px;
+      overflow: hidden;
+      background: var(--card-strong);
+      position: relative;
+    }
+
+    .avatar-shell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile-info {
+      padding: 20px 4px 5px;
+    }
+
+    .profile-info h3 {
+      margin: 0 0 4px;
+      font-size: 1.35rem;
+    }
+
+    .profile-info p {
+      color: var(--muted);
+      margin: 0;
+      font-size: .98rem;
+    }
+
+    .status {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 13px 10px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: .9rem;
+      margin-bottom: 2px;
+    }
+    .stat span { color: var(--muted); font-size: .77rem; }
+
+    section {
+      padding: 92px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-kicker {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .78rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(2.25rem, 5vw, 4rem);
+      letter-spacing: -.045em;
+      line-height: 1;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: var(--muted);
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 52px;
+      align-items: start;
+      margin-top: 38px;
+    }
+
+    .about-copy {
+      font-size: 1.08rem;
+      color: #dbe4ee;
+    }
+
+    .about-copy p:first-child { margin-top: 0; }
+
+    .mini-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255,255,255,.03);
+    }
+
+    .mini-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 17px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .mini-row:last-child { border-bottom: 0; }
+    .mini-row span { color: var(--muted); }
+    .mini-row strong { text-align: right; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 38px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+      padding: 26px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.025));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      right: -45px;
+      top: -45px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(61,214,161,.08);
+      filter: blur(2px);
+    }
+
+    .num {
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: #052017;
+      background: var(--accent);
+      font-weight: 900;
+      font-size: .86rem;
+      margin-bottom: 26px;
+    }
+
+    .card h3 {
+      margin: 0 0 9px;
+      font-size: 1.22rem;
+    }
+    .card p { color: var(--muted); margin: 0; }
+
+    .timeline {
+      margin-top: 40px;
+      border-left: 1px solid rgba(61,214,161,.45);
+      padding-left: 28px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 36px;
+    }
+
+    .timeline-item:last-child { padding-bottom: 0; }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -35px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 4px solid var(--bg);
+    }
+
+    .timeline-item h3 { margin: 0; font-size: 1.2rem; }
+    .timeline-item .meta {
+      color: var(--accent-2);
+      font-weight: 700;
+      font-size: .92rem;
+      margin-top: 3px;
+    }
+    .timeline-item p { color: var(--muted); max-width: 760px; }
+
+    .goal-box {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+      padding: 30px;
+      border-radius: 22px;
+      border: 1px solid rgba(127,214,255,.22);
+      background:
+        linear-gradient(110deg, rgba(61,214,161,.09), rgba(127,214,255,.07)),
+        rgba(255,255,255,.02);
+    }
+
+    .goal-box h3 { margin: 0 0 6px; font-size: 1.45rem; }
+    .goal-box p { margin: 0; color: var(--muted); }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 38px 0 48px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 70px;
+      }
+      .profile-wrap { justify-content: flex-start; }
+      .profile-card { width: min(360px, 100%); transform: none; }
+      .about-grid, .cards { grid-template-columns: 1fr; }
+      .goal-box { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .container { width: min(var(--max), calc(100% - 28px)); }
+      .nav-links { display: none; }
+      h1 { font-size: clamp(3rem, 17vw, 5rem); }
+      .status { grid-template-columns: 1fr; }
+      section { padding: 72px 0; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand"><span class="brand-dot"></span> Abdul Muntakim</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#focus">Focus</a>
+        <a href="#future">Future</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <div class="container hero">
+      <div>
+        <div class="tag">Accounting • Business Development • London</div>
+        <h1 class="gradient-text">Abdul<br>Muntakim</h1>
+        <p class="hero-copy">
+          I’m an <strong>Accounting Intern and Business Development professional at Emulous Accounting</strong>,
+          building practical experience across accounting, client relationships and business growth while
+          working toward a future <strong>ACCA qualification</strong>.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#about">Discover My Journey</a>
+          <a class="btn btn-secondary" href="https://github.com/Abdul-muntakim" target="_blank" rel="noopener">GitHub Profile ↗</a>
+        </div>
+      </div>
+
+      <div class="profile-wrap">
+        <article class="profile-card">
+          <div class="avatar-shell">
+            <img src="https://avatars.githubusercontent.com/u/318609741?v=4" alt="Abdul Muntakim">
+          </div>
+          <div class="profile-info">
+            <h3>Abdul Muntakim</h3>
+            <p>Accounting Intern • Business Development</p>
+            <div class="status">
+              <div class="stat"><strong>Emulous</strong><span>Current firm</span></div>
+              <div class="stat"><strong>ACCA</strong><span>Career goal</span></div>
+              <div class="stat"><strong>London</strong><span>Based in UK</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-kicker">About me</div>
+        <h2>Building a career at the intersection of finance and growth.</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I am developing my career in accountancy while gaining hands-on experience in both
+              <strong>accounting</strong> and <strong>business development</strong> at Emulous Accounting.
+              My role gives me exposure not only to the technical side of finance, but also to the
+              commercial side of building relationships, understanding client needs and helping a firm grow.
+            </p>
+            <p>
+              I’m particularly interested in continuing to strengthen my accounting knowledge, improving my
+              commercial awareness and progressing toward becoming <strong>ACCA qualified</strong>. Long term,
+              I want to combine strong technical accounting skills with an entrepreneurial and client-focused mindset.
+            </p>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-row"><span>Current role</span><strong>Accounting Intern</strong></div>
+            <div class="mini-row"><span>Additional focus</span><strong>Business Development</strong></div>
+            <div class="mini-row"><span>Firm</span><strong>Emulous Accounting</strong></div>
+            <div class="mini-row"><span>Career direction</span><strong>ACCA Qualification</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="container">
+        <div class="section-kicker">What I’m developing</div>
+        <h2>Commercial thinking backed by accounting fundamentals.</h2>
+        <p class="lead">
+          I’m building a broad skill set that helps me understand both the numbers behind a business
+          and the people, relationships and opportunities that help it grow.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="num">01</div>
+            <h3>Accounting & Finance</h3>
+            <p>Developing practical experience across accounts, tax awareness, financial information and client work.</p>
+          </article>
+
+          <article class="card">
+            <div class="num">02</div>
+            <h3>Business Development</h3>
+            <p>Building confidence in outreach, networking, relationship management and identifying opportunities for growth.</p>
+          </article>
+
+          <article class="card">
+            <div class="num">03</div>
+            <h3>Professional Growth</h3>
+            <p>Continuously improving technical knowledge, communication, commercial awareness and the skills required for ACCA progression.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-kicker">Experience</div>
+        <h2>Learning by doing.</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Accounting Intern & Business Development</h3>
+            <div class="meta">Emulous Accounting • Current</div>
+            <p>
+              Gaining practical accounting experience while contributing to business development activities,
+              professional networking, client outreach and the wider growth of the firm.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Developing Professional Expertise</h3>
+            <div class="meta">Accounting • Finance • Client Relationships</div>
+            <p>
+              Focused on understanding how strong accounting knowledge and strong client relationships work together
+              to create long-term value for businesses and individuals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="future">
+      <div class="container">
+        <div class="section-kicker">Where I’m heading</div>
+        <h2>My next chapter: ACCA.</h2>
+        <p class="lead">
+          My goal is to progress professionally, deepen my technical accounting knowledge and work toward
+          becoming ACCA qualified while continuing to build real-world commercial experience.
+        </p>
+
+        <div class="goal-box">
+          <div>
+            <h3>Focused on long-term progression</h3>
+            <p>Technical accounting. Commercial awareness. Strong client relationships. Continuous development.</p>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/Abdul-muntakim" target="_blank" rel="noopener">View GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Abdul Muntakim</span>
+      <span>Accounting • Business Development • ACCA Career Path</span>
+    </div>
+  </footer>
+</body>
+</html>
