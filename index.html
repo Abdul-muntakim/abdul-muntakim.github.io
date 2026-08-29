@@ -6,7 +6,7 @@
   <title>Abdul Muntakim | Accounting & Business Development</title>
   <meta name="description" content="Official website of Abdul Muntakim, Accounting Intern and Business Development professional at Emulous Accounting in London, working toward ACCA qualification.">
   <meta name="author" content="Abdul Muntakim">
-  <meta name="theme-color" content="#10243e">
+  <meta name="theme-color" content="#10382f">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://abdul-muntakim.github.io/">
 
@@ -39,36 +39,27 @@
     "url": "https://abdul-muntakim.github.io/",
     "image": "https://avatars.githubusercontent.com/u/318609741?v=4",
     "jobTitle": "Accounting Intern & Business Development",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Emulous Accounting"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/abdul-muntakim-84625932b"
-    ],
-    "knowsAbout": [
-      "Accounting",
-      "Finance",
-      "Business Development",
-      "Tax",
-      "Client Relationships"
-    ]
+    "worksFor": {"@type": "Organization", "name": "Emulous Accounting"},
+    "sameAs": ["https://www.linkedin.com/in/abdul-muntakim-84625932b"],
+    "knowsAbout": ["Accounting", "Finance", "Business Development", "Tax", "Client Relationships"]
   }
   </script>
 
   <style>
     :root {
-      --navy: #0f2742;
-      --navy-deep: #081728;
+      --forest: #10382f;
+      --forest-deep: #071f1a;
+      --emerald: #1d5b4c;
+      --emerald-soft: #dfeae4;
+      --champagne: #c7a766;
+      --champagne-dark: #a68749;
+      --ivory: #f8f5ed;
+      --cream: #fdfbf7;
       --white: #ffffff;
-      --text: #1d2a38;
-      --muted: #607086;
-      --line: #d9e1ea;
-      --gold: #b69149;
-      --gold-soft: #e8dcc4;
-      --panel: #ffffff;
-      --panel-alt: #f7f9fc;
-      --shadow: 0 18px 40px rgba(11, 28, 49, .10);
+      --ink: #182620;
+      --muted: #68766f;
+      --line: #dce3de;
+      --shadow: 0 18px 44px rgba(16, 56, 47, .10);
       --max: 1140px;
     }
 
@@ -77,8 +68,8 @@
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background: #eef3f8;
+      color: var(--ink);
+      background: var(--ivory);
       line-height: 1.65;
     }
 
@@ -90,9 +81,9 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(255,255,255,.92);
+      background: rgba(253,251,247,.94);
       backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(15,39,66,.08);
+      border-bottom: 1px solid rgba(16,56,47,.09);
     }
 
     .nav-inner {
@@ -106,9 +97,9 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 13px;
       font-weight: 800;
-      color: var(--navy);
+      color: var(--forest);
       letter-spacing: -.02em;
     }
 
@@ -118,276 +109,158 @@
       border-radius: 12px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, var(--navy), #173b63);
+      background: linear-gradient(145deg, var(--forest-deep), var(--emerald));
+      border: 1px solid rgba(199,167,102,.7);
       color: var(--white);
-      font-weight: 800;
-      box-shadow: var(--shadow);
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(7,31,26,.14);
     }
 
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      font-size: .95rem;
-      color: var(--muted);
-    }
-
-    .nav-links a:hover { color: var(--navy); }
+    .nav-links { display: flex; gap: 24px; color: var(--muted); font-size: .95rem; font-weight: 600; }
+    .nav-links a:hover { color: var(--forest); }
 
     .hero {
-      background: linear-gradient(135deg, var(--navy-deep), var(--navy));
       color: var(--white);
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(199,167,102,.18), transparent 28rem),
+        linear-gradient(135deg, var(--forest-deep) 0%, var(--forest) 58%, #174a3f 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -180px;
+      top: -180px;
+      width: 470px;
+      height: 470px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.08);
     }
 
     .hero-inner {
       min-height: 78vh;
       display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 50px;
+      grid-template-columns: 1.18fr .82fr;
+      gap: 56px;
       align-items: center;
-      padding: 86px 0;
+      padding: 88px 0;
+      position: relative;
+      z-index: 2;
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 9px;
       padding: 8px 14px;
       border-radius: 999px;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.12);
-      color: #d9e6f5;
-      font-size: .9rem;
-      margin-bottom: 20px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(199,167,102,.32);
+      color: #eee2c7;
+      font-size: .88rem;
+      margin-bottom: 22px;
     }
 
-    .eyebrow::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--gold);
-    }
+    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--champagne); }
 
     h1 {
       margin: 0;
-      font-size: clamp(3rem, 8vw, 5.4rem);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.4rem, 8vw, 6rem);
       line-height: .95;
-      letter-spacing: -.055em;
+      letter-spacing: -.045em;
+      font-weight: 500;
     }
 
-    .hero p {
-      margin: 24px 0 0;
-      max-width: 700px;
-      color: #d6e1ee;
-      font-size: clamp(1.05rem, 2vw, 1.2rem);
-    }
-
+    .hero p { margin: 25px 0 0; max-width: 700px; color: #dce9e3; font-size: clamp(1.05rem, 2vw, 1.2rem); }
     .hero p strong { color: var(--white); }
 
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 32px;
-    }
-
+    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 34px; }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       min-height: 50px;
       padding: 0 20px;
-      border-radius: 12px;
-      font-weight: 700;
-      transition: transform .18s ease, box-shadow .18s ease;
+      border-radius: 10px;
+      font-weight: 750;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
     }
-
     .btn:hover { transform: translateY(-2px); }
-
-    .btn-primary {
-      background: var(--gold);
-      color: #1d1a14;
-      box-shadow: 0 12px 30px rgba(182,145,73,.28);
-    }
-
-    .btn-secondary {
-      background: rgba(255,255,255,.08);
-      color: var(--white);
-      border: 1px solid rgba(255,255,255,.14);
-    }
+    .btn-primary { background: var(--champagne); color: #1f251f; box-shadow: 0 12px 28px rgba(199,167,102,.24); }
+    .btn-primary:hover { background: #d3b777; }
+    .btn-secondary { background: rgba(255,255,255,.07); color: var(--white); border: 1px solid rgba(255,255,255,.16); }
 
     .profile-card {
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 26px;
-      padding: 24px;
-      box-shadow: 0 20px 40px rgba(0,0,0,.18);
-    }
-
-    .profile-avatar {
-      aspect-ratio: 1 / 1;
-      border-radius: 20px;
-      overflow: hidden;
-      background: rgba(255,255,255,.1);
-      margin-bottom: 22px;
-    }
-
-    .profile-info h2 {
-      margin: 0 0 6px;
-      font-size: 1.45rem;
-      line-height: 1.1;
-      color: var(--white);
-    }
-
-    .profile-info p { margin: 0; color: #d8e3f0; }
-
-    .profile-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 22px;
-    }
-
-    .stat {
-      border-radius: 14px;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.10);
-      padding: 14px 10px;
-      text-align: center;
-    }
-
-    .stat strong { display: block; font-size: .9rem; color: var(--white); margin-bottom: 2px; }
-    .stat span { font-size: .75rem; color: #c6d5e8; }
-
-    .main { margin-top: -42px; padding-bottom: 72px; }
-
-    .section {
-      background: var(--panel);
+      background: rgba(255,255,255,.075);
+      border: 1px solid rgba(255,255,255,.13);
       border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.22);
+    }
+
+    .profile-avatar { aspect-ratio: 1 / 1; border-radius: 18px; overflow: hidden; background: rgba(255,255,255,.08); margin-bottom: 20px; }
+    .profile-info h2 { margin: 0 0 5px; color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 1.5rem; font-weight: 500; }
+    .profile-info p { margin: 0; color: #d4e1db; }
+
+    .profile-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 20px; }
+    .stat { border-radius: 12px; background: rgba(255,255,255,.06); border: 1px solid rgba(199,167,102,.16); padding: 13px 9px; text-align: center; }
+    .stat strong { display: block; color: var(--white); font-size: .9rem; margin-bottom: 2px; }
+    .stat span { color: #c9d9d2; font-size: .75rem; }
+
+    .main { margin-top: -38px; padding-bottom: 72px; position: relative; z-index: 3; }
+    .section {
+      background: var(--cream);
+      border-radius: 22px;
       box-shadow: var(--shadow);
       padding: 44px;
       margin-bottom: 24px;
-      border: 1px solid rgba(15,39,66,.05);
+      border: 1px solid rgba(16,56,47,.07);
     }
 
-    .section-kicker {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: .16em;
-      font-size: .78rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
+    .section-kicker { color: var(--champagne-dark); text-transform: uppercase; letter-spacing: .16em; font-size: .77rem; font-weight: 850; margin-bottom: 12px; }
+    .section h2 { margin: 0; color: var(--forest); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.15rem, 4vw, 3.25rem); line-height: 1.05; letter-spacing: -.03em; font-weight: 500; }
+    .lead { max-width: 780px; color: var(--muted); margin: 16px 0 0; font-size: 1.04rem; }
 
-    .section h2 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3rem);
-      color: var(--navy);
-      letter-spacing: -.04em;
-    }
-
-    .lead {
-      max-width: 760px;
-      color: var(--muted);
-      margin: 16px 0 0;
-      font-size: 1.04rem;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 36px;
-      margin-top: 30px;
-      align-items: start;
-    }
-
+    .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 38px; margin-top: 30px; align-items: start; }
     .about-copy p:first-child { margin-top: 0; }
+    .about-copy strong { color: var(--forest); }
 
-    .info-card {
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      background: var(--panel-alt);
-    }
-
-    .info-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 16px 18px;
-      border-bottom: 1px solid var(--line);
-    }
-
+    .info-card { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #f2f5f1; }
+    .info-row { display: flex; justify-content: space-between; gap: 18px; padding: 16px 18px; border-bottom: 1px solid var(--line); }
     .info-row:last-child { border-bottom: 0; }
     .info-row span { color: var(--muted); }
-    .info-row strong { text-align: right; color: var(--navy); }
+    .info-row strong { text-align: right; color: var(--forest); }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 30px;
-    }
-
-    .card {
-      background: var(--panel-alt);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 26px;
-    }
-
-    .card-number {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      display: grid;
-      place-items: center;
-      background: var(--navy);
-      color: var(--white);
-      font-weight: 800;
-      margin-bottom: 22px;
-    }
-
-    .card h3 { margin: 0 0 10px; color: var(--navy); font-size: 1.18rem; }
+    .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 30px; }
+    .card { background: #f4f6f2; border: 1px solid var(--line); border-radius: 16px; padding: 26px; transition: transform .18s ease, box-shadow .18s ease; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(16,56,47,.08); }
+    .card-number { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: var(--forest); color: #f3e8cf; font-weight: 800; margin-bottom: 22px; }
+    .card h3 { margin: 0 0 9px; color: var(--forest); font-size: 1.18rem; }
     .card p { margin: 0; color: var(--muted); }
 
-    .timeline {
-      margin-top: 28px;
-      border-left: 2px solid var(--gold-soft);
-      padding-left: 24px;
-    }
-
+    .timeline { margin-top: 28px; border-left: 2px solid #ddcfad; padding-left: 24px; }
     .timeline-item { position: relative; padding: 0 0 30px; }
     .timeline-item:last-child { padding-bottom: 0; }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: -32px;
-      top: 6px;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: var(--gold);
-      border: 4px solid var(--white);
-      box-shadow: 0 0 0 1px rgba(182,145,73,.3);
-    }
-
-    .timeline-item h3 { margin: 0; color: var(--navy); font-size: 1.18rem; }
-    .timeline-item .meta { margin-top: 4px; color: var(--gold); font-weight: 700; font-size: .92rem; }
+    .timeline-item::before { content: ""; position: absolute; left: -32px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--champagne); border: 4px solid var(--cream); box-shadow: 0 0 0 1px rgba(166,135,73,.25); }
+    .timeline-item h3 { margin: 0; color: var(--forest); font-size: 1.18rem; }
+    .timeline-item .meta { margin-top: 4px; color: var(--champagne-dark); font-weight: 750; font-size: .92rem; }
     .timeline-item p { margin-bottom: 0; color: var(--muted); max-width: 780px; }
 
     .cta {
       display: grid;
       grid-template-columns: 1fr auto;
+      gap: 26px;
       align-items: center;
-      gap: 24px;
-      background: linear-gradient(135deg, #f7f3eb, #fff);
-      border: 1px solid var(--gold-soft);
+      background: linear-gradient(135deg, #ece7d9 0%, #f8f5ed 55%, #e6eee9 100%);
+      border: 1px solid #ded3b8;
     }
 
     .footer { padding: 18px 0 54px; color: var(--muted); font-size: .92rem; }
-    .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
 
     @media (max-width: 900px) {
       .hero-inner, .about-grid, .cards, .cta { grid-template-columns: 1fr; }
@@ -398,7 +271,8 @@
     @media (max-width: 640px) {
       .container { width: min(var(--max), calc(100% - 28px)); }
       .nav-links { display: none; }
-      .section { padding: 30px 22px; border-radius: 20px; }
+      .hero-inner { padding: 66px 0; }
+      .section { padding: 30px 22px; border-radius: 18px; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -406,10 +280,7 @@
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark">AM</span>
-        <span>Abdul Muntakim</span>
-      </a>
+      <a class="brand" href="#top"><span class="brand-mark">AM</span><span>Abdul Muntakim</span></a>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#focus">Focus</a>
@@ -425,9 +296,7 @@
         <div class="eyebrow">Accounting • Business Development • London</div>
         <h1>Abdul Muntakim</h1>
         <p>
-          I'm an <strong>Accounting Intern and Business Development professional at Emulous Accounting</strong>,
-          developing practical experience in finance, client relationships and commercial growth while working toward
-          becoming <strong>ACCA qualified</strong>.
+          I'm an <strong>Accounting Intern and Business Development professional at Emulous Accounting</strong>, developing practical experience in finance, client relationships and commercial growth while working toward becoming <strong>ACCA qualified</strong>.
         </p>
         <div class="actions">
           <a class="btn btn-primary" href="https://www.linkedin.com/in/abdul-muntakim-84625932b" target="_blank" rel="noopener">View LinkedIn</a>
@@ -436,16 +305,11 @@
       </div>
 
       <aside class="profile-card">
-        <div class="profile-avatar">
-          <img src="https://avatars.githubusercontent.com/u/318609741?v=4" alt="Abdul Muntakim">
-        </div>
-        <div class="profile-info">
-          <h2>Abdul Muntakim</h2>
-          <p>Accounting Intern • Business Development</p>
-        </div>
+        <div class="profile-avatar"><img src="https://avatars.githubusercontent.com/u/318609741?v=4" alt="Abdul Muntakim"></div>
+        <div class="profile-info"><h2>Abdul Muntakim</h2><p>Accounting Intern • Business Development</p></div>
         <div class="profile-grid">
           <div class="stat"><strong>Emulous</strong><span>Current firm</span></div>
-          <div class="stat"><strong>ACCA</strong><span>Long-term goal</span></div>
+          <div class="stat"><strong>ACCA</strong><span>Career goal</span></div>
           <div class="stat"><strong>London</strong><span>United Kingdom</span></div>
         </div>
       </aside>
@@ -460,14 +324,8 @@
         <p class="lead">A focused profile designed to help employers, recruiters and professional contacts understand who I am and what I am working toward.</p>
         <div class="about-grid">
           <div class="about-copy">
-            <p>
-              I am building my career in accountancy while gaining hands-on experience in both <strong>accounting</strong>
-              and <strong>business development</strong> at Emulous Accounting. This gives me exposure to the technical side
-              of finance as well as the commercial side of client relationships, communication and business growth.
-            </p>
-            <p>
-              My aim is to continue developing strong accounting fundamentals, strengthen my commercial awareness and progress toward becoming <strong>ACCA qualified</strong>. Over time, I want to combine technical accuracy with a client-focused and growth-minded approach.
-            </p>
+            <p>I am building my career in accountancy while gaining hands-on experience in both <strong>accounting</strong> and <strong>business development</strong> at Emulous Accounting. This gives me exposure to the technical side of finance as well as the commercial side of client relationships, communication and business growth.</p>
+            <p>My aim is to continue developing strong accounting fundamentals, strengthen my commercial awareness and progress toward becoming <strong>ACCA qualified</strong>. Over time, I want to combine technical accuracy with a client-focused and growth-minded approach.</p>
           </div>
           <div class="info-card">
             <div class="info-row"><span>Name</span><strong>Abdul Muntakim</strong></div>
@@ -484,21 +342,9 @@
         <h2>Professional strengths I'm developing.</h2>
         <p class="lead">I'm building a balanced skill set that supports both technical accounting work and broader business growth.</p>
         <div class="cards">
-          <article class="card">
-            <div class="card-number">01</div>
-            <h3>Accounting & Finance</h3>
-            <p>Developing practical knowledge across accounts, financial information, tax awareness and day-to-day client work.</p>
-          </article>
-          <article class="card">
-            <div class="card-number">02</div>
-            <h3>Business Development</h3>
-            <p>Building confidence in networking, outreach, relationship management and identifying growth opportunities.</p>
-          </article>
-          <article class="card">
-            <div class="card-number">03</div>
-            <h3>Career Progression</h3>
-            <p>Working toward ACCA qualification while continuously improving communication, professionalism and commercial awareness.</p>
-          </article>
+          <article class="card"><div class="card-number">01</div><h3>Accounting & Finance</h3><p>Developing practical knowledge across accounts, financial information, tax awareness and day-to-day client work.</p></article>
+          <article class="card"><div class="card-number">02</div><h3>Business Development</h3><p>Building confidence in networking, outreach, relationship management and identifying growth opportunities.</p></article>
+          <article class="card"><div class="card-number">03</div><h3>Career Progression</h3><p>Working toward ACCA qualification while continuously improving communication, professionalism and commercial awareness.</p></article>
         </div>
       </section>
 
@@ -506,35 +352,20 @@
         <div class="section-kicker">Experience</div>
         <h2>Current professional journey.</h2>
         <div class="timeline">
-          <article class="timeline-item">
-            <h3>Accounting Intern & Business Development</h3>
-            <div class="meta">Emulous Accounting • Current</div>
-            <p>Gaining practical accounting experience while supporting business development, networking, client communication and the wider growth of the firm.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Developing Commercial & Technical Skills</h3>
-            <div class="meta">Accounting • Finance • Client Relationships</div>
-            <p>Focused on understanding how strong financial knowledge and strong client relationships work together to create value for businesses and individuals.</p>
-          </article>
+          <article class="timeline-item"><h3>Accounting Intern & Business Development</h3><div class="meta">Emulous Accounting • Current</div><p>Gaining practical accounting experience while supporting business development, networking, client communication and the wider growth of the firm.</p></article>
+          <article class="timeline-item"><h3>Developing Commercial & Technical Skills</h3><div class="meta">Accounting • Finance • Client Relationships</div><p>Focused on understanding how strong financial knowledge and strong client relationships work together to create value for businesses and individuals.</p></article>
         </div>
       </section>
 
       <section class="section cta" id="contact">
-        <div>
-          <div class="section-kicker">Contact</div>
-          <h2>Connect with me professionally.</h2>
-          <p class="lead">The best place to connect with me is on LinkedIn.</p>
-        </div>
+        <div><div class="section-kicker">Contact</div><h2>Connect with me professionally.</h2><p class="lead">The best place to connect with me is on LinkedIn.</p></div>
         <a class="btn btn-primary" href="https://www.linkedin.com/in/abdul-muntakim-84625932b" target="_blank" rel="noopener">Open LinkedIn</a>
       </section>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <span>© 2026 Abdul Muntakim</span>
-      <span>Accounting • Business Development • ACCA Aspirant</span>
-    </div>
+    <div class="container footer-inner"><span>© 2026 Abdul Muntakim</span><span>Accounting • Business Development • ACCA Aspirant</span></div>
   </footer>
 </body>
 </html>
