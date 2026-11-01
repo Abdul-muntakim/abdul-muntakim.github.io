@@ -6,7 +6,8 @@ Static personal portfolio, online CV and educational insights, published on GitH
 - `cv.html` and `cv.css`: online CV, including a browser print / Save as PDF layout.
 - `insights/` and `reading.css`: educational articles, source links and author profiles.
 - `portfolio.js`: accessible mobile navigation and active section indicator.
-- `src/effects.js`: optional Motion entrances and Vanilla Tilt monogram depth. All content is visible without JavaScript. Touch devices and reduced-motion preferences disable tilt; preference changes cancel active animations.
+- `fonts/`: self-hosted Source Serif 4 variable font (SIL Open Font License, see `fonts/OFL.txt`) used for headings on every page.
+- `src/effects.js`: optional motion. Staggered list reveals, nav state, and Vanilla Tilt 3D depth on the hero identity card and the certificate and article cards. The hero entrance itself is CSS-only. All content is visible without JavaScript. Touch devices and reduced-motion preferences disable tilt; preference changes cancel active animations.
 
 Run `npm ci` and `npm run build` after editing animation source, and commit the generated `effects.js`. It runs locally with no CDN or API key. Retain `THIRD_PARTY_NOTICES.md`.
 
